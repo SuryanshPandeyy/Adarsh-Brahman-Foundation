@@ -95,7 +95,6 @@ header>p{
     justify-content: space-around;
     align-content: space-between;
     margin-bottom:100px;
-    grid-auto-flow: dense;
 }
 
 .grid .box {
@@ -164,7 +163,7 @@ header>p{
     }
 
     .grid .box {
-        width: 55%;
+        width: 80%;
         padding-bottom: 30px;
         justify-self: center;
         align-self: center;
