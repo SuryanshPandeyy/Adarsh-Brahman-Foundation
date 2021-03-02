@@ -30,12 +30,12 @@ header::after{
 .icon>img{
     height: 99%;
 }
-p{
+header>p{
     position: relative;
     width: 50%;
     color: rgb(255, 72, 0);
     text-shadow: 2px 2px 3px grey;
-    font-size: 1.5rem;
+    font-size: 4vw;
     letter-spacing: 1.3px;
     font-style: normal;
     font-family: 'Martel',serif;
@@ -44,12 +44,32 @@ p{
 .carousel {
     margin:10px auto;
     width: 90%;
-    height: fit-content;
+    height: 90%;
 }
 
 .peopleCarouselImg img {
-    width: fit-content;
-    height: contain;
+    width: cover;
+    height: cover;
+}
+
+@media only screen and (min-width:856px){
+    .carousel {
+        width: 80%;
+        height: 90%;
+    }
+    .peopleCarouselImg img {
+        width: fit-content;
+        height: fit-content;
+    }
+    header>p {
+        font-size: 5vw;
+    }
+
+}
+@media only screen and (max-width:560px) {
+   header>p{
+       font-size:4vw;
+   }
 }
 
 .prev, .next{
