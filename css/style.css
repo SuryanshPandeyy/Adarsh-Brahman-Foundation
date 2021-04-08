@@ -78,6 +78,7 @@ header>p{
     color: #818181;
     display: block;
     transition: 0.1s;
+    
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -107,8 +108,28 @@ header>p{
 
 /* navigation closed*/
 
+/* menu start */
+.menu {
+    text-align: center;
+    word-spacing: 20px;
+    margin-top: 20px;
+    cursor: default;
+}
+.menu a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #e08217;
+}
+/* menu closed */
 /*contact form start*/
 /* Full-width input fields */
+.container-form {
+    padding: 16px;
+}
 
 .container-form input[type=text],
 textarea {
@@ -136,9 +157,6 @@ textarea {
     background-color: #45a049;
 }
 
-.container-form {
-    padding: 16px;
-}
 
 
 /* The Modal (background) */
@@ -166,6 +184,7 @@ textarea {
 
 /* Modal Content/Box */
 .modal-content-form {
+    border-radius: 20px;
     background-color: #fefefe;
     position: relative;
     margin:0 auto 0 auto;
@@ -176,12 +195,12 @@ textarea {
 }
 
 /* The Close Button (x) */
-.close {
+.btn-close {
     position: absolute;
     right: 25px;
-    top: 0;
+    top: 10px;
     color: #000;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: bold;
 }
 
