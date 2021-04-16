@@ -11,12 +11,20 @@ function closeNav() {
 /*navgation closed*/
 /*contact form start*/
 // Get the modal
-var modal = document.getElementById('id01');
+var modal1 = document.getElementById('id01');
+var blocker1 = document.getElementById('blocker1');
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+blocker1.onclick = function () {
+        modal1.style.display = "none";
 } 
 /*contact form end*/
+/* join start*/
+var modal2 = document.getElementById('id02');
+var blocker2 = document.getElementById('blocker2');
+
+// When the user clicks anywhere outside of the modal, close it
+blocker2.onclick = function () {
+        modal2.style.display = "none";
+}
+/* join end*/

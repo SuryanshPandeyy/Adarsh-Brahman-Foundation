@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>आदर्श ब्राह्मण फाउंडेशन</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/member.css">
     
 <!-- favicon open -->
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -60,6 +61,7 @@
 
     <!--contact form start-->
     <div id="id01" class="modal">
+        <div class="blocker" id="blocker1"></div>
     
         <form class="modal-content-form animate" action="/action_page.php" method="post">
             <div class="imgcontainer">
@@ -80,7 +82,66 @@
             </div>
         </form>
     </div>
+
+    
     <!--contact form end-->
+
+    <!-- join start-->
+    <div id="id02" class="modal">
+        <div class="blocker" id="blocker2"></div>
+    <div class="containers animate">
+        <form action="" class="form-join" id="form1">
+            <h3>Personal Details</h3>
+            <div class="select">
+                <select id="standard-select">
+                    <option class="value" value="Option 1" disabled selected>Title</option>
+                    <option value="Option 2">श्री</option>
+                    <option value="Option 3">श्रीमती</option>
+                    <option value="Option 4">अन्य</option>
+                </select>
+            </div>
+            <input type="text" name="fname" id="fname" placeholder="Full Name"><br>
+            <input type="text" name="add1" id="add1" placeholder="Full Address 1"><br>
+            <input type="text" name="add1" id="add1" placeholder="Full Address 2"><br>
+    
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+    
+        <form action="" class="form-join" id="form2">
+            <h3>Address</h3>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+            <input type="email" name="alt-email" id="alt-email" placeholder="Alternative Email"><br>
+            <input type="number" id="mob" name="mob" placeholder="Mobile No."><br>
+            <input type="number" name="alt-mob" id="alt-mob" placeholder="Alternative Contact No."><br>
+    
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+    
+        <form action="" class="form-join" id="form3">
+            <h3>Alternative</h3>
+    
+    
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="Submit">Submit</button>
+            </div>
+        </form>
+    
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+    </div>
+        
+    </div>
+    <!-- join end-->
 
     <!--carousel start-->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -111,7 +172,7 @@
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Members</a>
-        <a href="join_us.html" class="join_us">Join Us</a>
+        <a href="#" class="join_us" onclick="document.getElementById('id02').style.display='block'">Join Us</a>
         <a href="#" onclick="document.getElementById('id01').style.display='block'">Contact</a>
     </div>
     <!-- menu closed -->
@@ -173,6 +234,7 @@
 
     <!--cards end-->
     <script src="js/script.js"></script>
+    <script src="js/member.js"></script>
     <script src="https://kit.fontawesome.com/d319168e11.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
