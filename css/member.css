@@ -1,0 +1,95 @@
+
+.containers{
+    width: 360px;
+    height: 420px;
+    background-color: rgb(80, 80, 80);
+    margin: 8% auto;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.form-join h3{
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    margin-bottom:  40px;
+    color: rgb(255, 255, 255);
+}
+.form-join{
+    width: 280px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+.form-join input{
+    padding: 10px 5px;
+    margin:5px 0;
+    width:100%;
+    border: 0;
+    border-bottom:  2px solid rgb(0, 157, 255);
+    outline: none;
+    background: transparent;
+}
+.form-join input::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+.form-join button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #009dff, #06b4ff);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#form2{
+    left: 450px;
+}
+#form3{
+    left: 450px;
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow:  0 -1px 5px -1px #000;
+    position: relative;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    height: 100%; 
+    width: 120px;
+    background: linear-gradient(to right, #d9d9d9, #ff7e06);
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top:0;
+    border-left: 20px solid #ff7e06;
+}

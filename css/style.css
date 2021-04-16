@@ -8,7 +8,6 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     height: 120px;
     margin:0 0 1px 0;
     background-color: rgb(255, 255, 255);
@@ -303,7 +302,7 @@ textarea {
 .grid {
     position: relative;
     display: grid;
-    grid-gap: 30px 10px;
+    grid-gap: 20px 10px;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin: 10px auto;
@@ -337,7 +336,6 @@ textarea {
 
 .content>img {
     width: 100%;
-    height: 40vh;
     border-radius: 5px 5px 0 0;
 }
 
@@ -407,6 +405,7 @@ textarea {
     }
 
     .flex .box {
+        flex-basis: 33%;
         width: 80%;
         padding-bottom: 30px;
         justify-self: center;
@@ -414,22 +413,9 @@ textarea {
         margin: 20px;
     }
 }
-@media only screen and (min-width:1270px){
-    .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
-        align-items: center;
+@media only screen and (min-width:787px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
     }
-    .flex .box {
-        width: 80%;
-        height: 100%;
-        padding-bottom: 30px;
-        justify-self: center;
-        align-self: center;
-        margin: 20px;
-    }
-    
 }
