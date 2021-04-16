@@ -9,10 +9,11 @@ header{
     justify-content: space-around;
     align-items: center;
     height: 120px;
-    margin:0 0 1px 0;
+    margin:0 0 30px 0;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(147, 147, 147, 0.538);
+    border: 0px solid rgba(147, 147, 147, 0.538);
     user-select: none;
+    outline: none;
 }
 header::after{
     content:"";
@@ -25,24 +26,30 @@ header::after{
 
 .icon{
     width: 100px;
-    height: 100px;
+    height: 130px;
     border-radius: 50px;
 }
 .icon>img{
-    height: 99%;
+    position: relative;
+    top: -5px;
+    height: 100%;
 }
 header>p{
     position: relative;
     width: 50%;
     color: rgb(255, 72, 0);
-    text-shadow: 2px 2px 3px grey;
-    font-size: 4vw;
+    text-shadow: 2px 2px 3px rgb(200, 200, 200);
+    font-size: 3.7vw;
     letter-spacing: 1.3px;
     font-style: normal;
     font-family: 'Martel',serif;
     text-align: left;
 }
-
+@media only screen and (max-width: 700px){
+    header>p{
+        font-size: 4.5vw; 
+    }
+}
 
 /* navigation open*/
 
@@ -289,15 +296,7 @@ textarea {
         width: fit-content;
         height: fit-content;
     }
-    header>p {
-        font-size: 5vw;
-    }
 
-}
-@media only screen and (max-width:560px) {
-   header>p{
-       font-size:4vw;
-   }
 }
 
 .prev, .next{
