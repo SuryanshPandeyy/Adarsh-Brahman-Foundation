@@ -1,14 +1,12 @@
 /*navgation open*/
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+$(".bars").on("click", () => {
+    $(".menu").addClass("show");
+})
+$(".close").on("click", () => {
+    $(".menu").removeClass("show");
+})
 /*navgation closed*/
+
 /*contact form start*/
 // Get the modal
 var modal1 = document.getElementById('id01');
@@ -28,3 +26,4 @@ blocker2.onclick = function () {
         modal2.style.display = "none";
 }
 /* join end*/
+

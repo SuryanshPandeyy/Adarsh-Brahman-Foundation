@@ -1,6 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
+}
+
+html{
+    font-size: 62.5%;
+    position: relative;
+}
+body{
+    position: relative;
+    height: 100%;
 }
 
 header{
@@ -8,174 +18,183 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
-    margin:0 0 30px 0;
+    margin:0 0 3rem 0;
     background-color: rgb(255, 255, 255);
-    border: 0px solid rgba(147, 147, 147, 0.538);
+    border: 0rem solid rgba(147, 147, 147, 0.538);
     user-select: none;
     outline: none;
 }
 header::after{
     content:"";
     width: 100%;
-    height: 120px;
+    height: 10rem;
     position: absolute;
-    box-shadow: 0px 0px 20px 2px rgb(96, 92, 92);
-    filter: blur(2px);
+    box-shadow: 0rem 0rem 2rem .2rem rgb(96, 92, 92);
+    filter: blur(.2rem);
 }
 
 .icon{
-    width: 100px;
-    height: 130px;
-    border-radius: 50px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
 }
 .icon>img{
     position: relative;
-    top: -5px;
+    top: -.5rem;
     height: 100%;
 }
-header>p{
-    position: relative;
-    width: 50%;
-    color: rgb(255, 72, 0);
-    text-shadow: 2px 2px 3px rgb(200, 200, 200);
-    font-size: 3.7vw;
-    letter-spacing: 1.3px;
-    font-style: normal;
-    font-family: 'Martel',serif;
-    text-align: left;
-}
-@media only screen and (max-width: 700px){
-    header>p{
-        font-size: 4.5vw; 
-    }
-}
-
-/* navigation open*/
-
-/* The side navigation menu */
-.sidenav {
-    height: fit-content;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 3;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.3s;
-    /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a ,.sidenav input {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.1s;
-    
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 56px;
-    margin-left: 50px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-/* navigation closed*/
 
 /* menu start */
-.menu {
-    width: 100%;
+.desktopMenu {
     text-align: center;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: default;
+    z-index: 1;
 }
-.menu a{
-    font-size: 16px;
-    margin:0 8px;
+.desktopMenu a{
+    font-size: 1.7rem;
+    margin:0 2rem;
     text-transform: capitalize;
     color: black;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.menu .join_us{
+
+.desktopMenu .join_us{
     color: white;
     background-color: rgb(255, 123, 0);
-    padding: 5px;
+    padding: .5rem;
     box-sizing: border-box;
-    border: 2px solid rgb(255, 123, 0);
-    border-radius: 4px;
+    border: .2rem solid rgb(255, 123, 0);
+    border-radius: .4rem;
 
 }
-.menu .back{
+.desktopMenu .back{
     color: white;
     background-color: rgb(51, 51, 51);
-    padding: 5px;
+    padding: .5rem;
     box-sizing: border-box;
-    border: 2px solid rgb(41, 41, 41);
-    border-radius: 4px;
+    border: .2rem solid rgb(41, 41, 41);
+    border-radius: .4rem;
 }
 
 
-.menu a:hover{
+.desktopMenu a:hover{
     color: #e08217;
 }
-.menu .join_us:hover{
+.desktopMenu .join_us:hover{
     color: white;
     background-color: orange;
-    border: 2px solid orange; 
+    border: .2rem solid orange; 
 }
-.menu .back:hover {
+.desktopMenu .back:hover {
     color: white;
     background-color: rgb(29, 29, 29);
-    border: 2px solid rgb(26, 26, 26);
+    border: .2rem solid rgb(26, 26, 26);
+}
+
+@media only screen and (max-width: 678px){
+    .desktopMenu {
+        display:none;
+    }
 }
 /* menu closed */
+
+/* mobile menu start */
+.menu {
+    width: 20rem;
+    background-color:white;
+    height: 100vh;
+    position: fixed;
+    right: -25rem;
+    top: 0;
+    transition: all 0.2s linear;
+    z-index: 1;
+}
+
+.bars {
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+}
+
+.menu.show {
+    width: 20rem;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.close {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    cursor: pointer;
+}
+.close i{
+    font-size: 2rem;
+}
+
+.menu .menuList {
+    padding: 2.5rem;
+    width: 100%;
+    list-style: none;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.menu .menuList li {
+    margin: .5rem 0;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: transform 0.1s linear;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu .menuList li a {
+    color: black;   
+    text-decoration: none;
+}
+
+.menu .menuList li:hover {
+    transform: scale(1.05);
+    background: orange;
+}
+
+.menu .menuList li:hover a {
+    color: white;
+}
+
+@media only screen and (min-width: 678px) {
+    .mobileNavbar {
+        display: none;
+    }
+}
+/* mobile menu closed */
+
 /*contact form start*/
 /* Full-width input fields */
 .container-form {
-    padding: 16px;
+    padding: 1.6rem;
 }
 
 .container-form input[type=text],
 textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 1.2rem;
+    border: .1rem solid #ccc;
+    border-radius: .4rem;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: .6rem;
+    margin-bottom: 1.6rem;
     resize: vertical;
 }
 
@@ -183,9 +202,9 @@ textarea {
 .container-form input[type=submit] {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
+    padding: 1.2rem 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: .4rem;
     cursor: pointer;
 }
 
@@ -215,17 +234,16 @@ textarea {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.62);
     /* Black w/ opacity */
-    padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content-form {
-    border-radius: 20px;
+    border-radius: 2rem;
     background-color: #fefefe;
     position: relative;
     margin:0 auto 0 auto;
     /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
+    border: .1rem solid #888;
     width: 80%;
     /* Could be more or less, depending on screen size */
 }
@@ -233,10 +251,10 @@ textarea {
 /* The Close Button (x) */
 .btn-close {
     position: absolute;
-    right: 25px;
-    top: 10px;
+    right: 2.5rem;
+    top: 1rem;
     color: #000;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -272,42 +290,77 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 468px) {
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(0.8)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(0.8)
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(0.7)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(0.7)
+        }
+    }
+}
+
 /*contact form end*/
 
-
-
-.carousel {
-    margin:10px auto;
-    width: 90%;
-    height: 90%;
-}
-
-.peopleCarouselImg img {
-    width: cover;
-    height: cover;
-}
-
-@media only screen and (min-width:856px){
-    .carousel {
-        width: 80%;
-        height: 90%;
-    }
-    .peopleCarouselImg img {
-        width: fit-content;
-        height: fit-content;
-    }
-
-}
-
 .prev, .next{
-    font-size: 30px;
+    font-size: 3rem;
     color: rgb(0, 0, 0, 10);
 }
 .heading{
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 50px 0 30px 0;
-    color: rgb(255, 81, 0);
+    margin: 3rem 0 3rem 0;
+    color: #631800;
+}
+.heading h1 {
+    width: 90%;
 }
 
 /*cards*/
@@ -315,27 +368,30 @@ textarea {
 .grid {
     position: relative;
     display: grid;
-    grid-gap: 20px 10px;
+    grid-gap: 2rem 0rem;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    margin: 10px auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 1rem auto;
+    padding: 2rem;
+    place-items: center;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid .box {
     justify-self: center;
     align-self: center;
     position: relative;
-    margin: 5px 0px;
     width: 95%;
     height: 100%;
     background: #444444dc;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 .grid .box:hover {
     cursor:pointer;
 }
-
 
 .content {
     display: flex;
@@ -344,33 +400,37 @@ textarea {
     flex-direction: column;
     position: relative;
     z-index: 2;
-
 }
 
 .content>img {
     width: 100%;
-    border-radius: 5px 5px 0 0;
+    height: 50%;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .content>h1 {
     align-self: center;
     color: rgb(255, 255, 255);
-    font-size: 1.6em;
-    margin: 10px 0 20px 0;
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .content>p {
     padding:0 20px;
     color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
 }
 
 .content>a {
     align-self: flex-end;
     justify-self: flex-end;
-    font-size: 1.1em;
-    border-radius: 5px;
-    padding: 5px 20px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    margin: 1rem;
     color: antiquewhite;
     text-decoration: none;
     font-weight: 700;
@@ -382,16 +442,16 @@ textarea {
 
 /*footer start*/
 .fa {
-    padding:20px;
-    font-size: 20px;
+    padding:2rem;
+    font-size: 2rem;
     width: fit-content;
     height: fit-content;
     text-align: center;
     text-decoration: none;
-    margin: 10px 5px;
+    margin: 1rem .5rem;
     border-radius: 50%;
 }
-.fa:hover {
+.fa:hover:not(.bars .fa) {
     opacity: 0.7;
     color:white;
 }
@@ -420,16 +480,10 @@ textarea {
     .flex .box {
         flex-basis: 33%;
         width: 80%;
-        padding-bottom: 30px;
+        padding-bottom: 3rem;
         justify-self: center;
         align-self: center;
-        margin: 20px;
-    }
-}
-@media only screen and (min-width:787px){
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        margin: 2rem;
     }
 }
 
@@ -442,5 +496,75 @@ textarea {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.296);
+    background-color: rgba(0, 0, 0, 0.20);
 }
+
+.members_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.members{
+    width: 90%;
+    background-color: slategray;
+    padding: 2rem;
+}
+
+/* swiper */
+.swiper-container {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.swiper-container .swiper-pagination{
+   position: relative;
+   top: 0rem;
+}
+.members-heading{
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    color: white;
+}
+.members_card{
+    background: grey;
+}
+.members_card .img{
+    height: 15rem;
+}
+.members_card .img img{
+    width: 100%;
+}
+.member-content{
+    background: white;
+}
+
+.members_card .member-content h2{
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem;
+    color: brown;
+}
+.member-content p{
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+.members_card .member-content button{
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding:.1rem .5rem;
+    margin: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: slategray;
+    color: white;
+}
+
