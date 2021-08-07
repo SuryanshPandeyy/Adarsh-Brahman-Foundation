@@ -89,18 +89,18 @@
             <img src="img/icon.png" alt="icon" />
         </div>
         <div class="desktopMenu">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">About</a>
             <a href="">Members</a>
             <a href="#" class="join_us" onclick="document.getElementById('id02').style.display='block'">Join Us</a>
-            <a href="#" onclick="document.getElementById('id01').style.display='block'">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="mobileNavbar">
             <div class="bars"><i class="fa fa-bars"></i></div>
             <div class="menu">
                 <div class="close"><i class="fas fa-times"></i></div>
                 <ul class="menuList">
-                    <li><a href="#"> Home </a></li>
+                    <li><a href="index.html"> Home </a></li>
                     <li><a href="#"> About </a></li>
                     <li><a href="#"> Members </a></li>
                     <li><a href="#" onclick="document.getElementById('id02').style.display='block'"> Join Us </a></li>
@@ -109,33 +109,6 @@
             </div>
         </div>
     </header>
-
-    <!--contact form start-->
-    <div id="id01" class="modal">
-        <div class="blocker" id="blocker1"></div>
-
-        <form class="modal-content-form animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="btn-close"
-                    title="Close Modal"></span>
-            </div>
-
-            <div class="container-form">
-                <label for="fullname"><b>Full Name</b></label>
-                <input type="text" placeholder="Enter Your Full name" name="fullname" required>
-
-                <label for="add"><b>Address</b></label>
-                <input type="text" placeholder="Enter your address" name="add" required>
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-                <input type="submit" value="Submit">
-
-            </div>
-        </form>
-    </div>
-
-
-    <!--contact form end-->
 
     <!-- join start-->
     <div id="id02" class="modal">

@@ -568,3 +568,93 @@ textarea {
     color: white;
 }
 
+.contact-form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form .container-form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 95vw;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-details h2{
+    text-align: center;
+    padding:1rem 0;
+}
+
+.contact-details .contactHeaderImg{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details .contactHeaderImg img{
+    width: 70%;
+    height: 100%;
+}
+
+.contact-details .office-details{
+    margin: 2rem 0;
+}
+.contact-details .office-details>p{
+    text-align: center; 
+    color: #601300;
+    font-size: 3rem;
+}
+.contact-details .office-details ul{
+    list-style: none;
+}
+.contact-details .office-details ul li{
+    display: flex;
+    align-items: center;
+    margin: 2rem  0;
+}
+.contact-details .office-details ul li i{
+    font-size: 2rem;
+    margin:0 1rem;
+}
+.contact-details .office-details ul li h3{
+    font-size: 1.5rem;
+}
+.contact-details .office-details ul li p, .contact-details .office-details ul li p a{
+    font-size: 1.5rem;
+    margin:0 1rem ;
+    text-decoration: none;
+    color: #631800;
+}
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    margin-top:5rem;
+    padding: 2rem;
+    background-color: grey; 
+    position: relative;
+}
+
+footer .social-media{
+    display:  flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+footer .social-media a{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
