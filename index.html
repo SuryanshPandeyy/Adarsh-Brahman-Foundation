@@ -86,14 +86,14 @@
 <body>
     <header>
         <div class="icon">
-            <img src="img/icon.png" alt="icon" />
+            <a href="index.html"><img src="img/icon.png" alt="icon" /></a>
         </div>
         <div class="desktopMenu">
             <a href="index.html">Home</a>
+            <a href="">सदस्य</a>
+            <a href="#" class="join_us" onclick="document.getElementById('id02').style.display='block'">पञ्जीकरण करें</a>
+            <a href="contact.html">सम्पर्क</a>
             <a href="">About</a>
-            <a href="">Members</a>
-            <a href="#" class="join_us" onclick="document.getElementById('id02').style.display='block'">Join Us</a>
-            <a href="contact.html">Contact</a>
         </div>
         <div class="mobileNavbar">
             <div class="bars"><i class="fa fa-bars"></i></div>
@@ -101,10 +101,10 @@
                 <div class="close"><i class="fas fa-times"></i></div>
                 <ul class="menuList">
                     <li><a href="index.html"> Home </a></li>
+                    <li><a href="#"> सदस्य </a></li>
+                    <li><a href="#" onclick="document.getElementById('id02').style.display='block'">पञ्जीकरण करें</a></li>
+                    <li><a href="contact.html"> सम्पर्क </a></li>
                     <li><a href="#"> About </a></li>
-                    <li><a href="#"> Members </a></li>
-                    <li><a href="#" onclick="document.getElementById('id02').style.display='block'"> Join Us </a></li>
-                    <li><a href="#"> Contact </a></li>
                 </ul>
             </div>
         </div>
@@ -115,54 +115,54 @@
         <div class="blocker" id="blocker2"></div>
         <div class="flexbox">
             <div class="containers animate">
-                <form action="" class="form-join" id="form1">
-                    <h3>Personal Details</h3>
-                    <div class="select">
-                        <select id="standard-select">
-                            <option class="value" value="Option 1" disabled selected>Title</option>
-                            <option value="Option 2">श्री</option>
-                            <option value="Option 3">श्रीमती</option>
-                            <option value="Option 4">अन्य</option>
-                        </select>
-                    </div>
-                    <input type="text" name="fname" id="fname" placeholder="Full Name"><br>
-                    <input type="text" name="add1" id="add1" placeholder="Full Address 1"><br>
-                    <input type="text" name="add1" id="add1" placeholder="Full Address 2"><br>
+                <form action="">
+                    <div class="form-join" id="form1">
+                        <h3>सदस्यता फॉर्म</h3>
+                        <div class="select">
+                            <select id="standard-select">
+                                <option class="value" value="Option 1" disabled selected>Title</option>
+                                <option value="Option 2">श्री</option>
+                                <option value="Option 3">श्रीमती</option>
+                                <option value="Option 4">कुं</option>
+                            </select>
+                        </div>
+                        <input type="text" name="fname" id="fname" placeholder="पूरा नाम" /><br />
+                        <input type="email" name="email" id="email" placeholder="ईमेल" /><br />
+                        <input type="number" id="mob" name="mob" placeholder="मोबाइल नम्बर" /><br />
 
-                    <div class="btn-box">
-                        <button type="button" id="next1">Next</button>
+                        <div class="btn-box">
+                            <button type="button" id="next1">अगला</button>
+                        </div>
+                    </div>
+
+
+                    <div class="form-join" id="form2">
+                        <h3>सदस्यता फॉर्म</h3>
+                        <input type="date" id="dob" name="dob" placeholder="जन्म तिथि /"><br />
+                        <input type="text" id="occ" name="occupation" placeholder="व्यवसाय" /><br />
+                        <div class="btn-box">
+                            <button type="button" id="back1">पिछला</button>
+                            <button type="button" id="next2">अगला</button>
+                        </div>
+                    </div>
+
+                    <div class="form-join" id="form3">
+                        <h3>सदस्यता फॉर्म</h3>
+                        <textarea type="text" name="add1" id="add1" placeholder="पता 1"></textarea><br /><br />
+                        <textarea type="text" name="add1" id="add1" placeholder="पता 2"></textarea><br />
+                        <div class="btn-box">
+                            <button type="button" id="back2">पिछला</button>
+                            <button type="Submit">जमा करें</button>
+                        </div>
+                    </div>
+
+                    <div class="step-row">
+                        <div id="progress"></div>
+                        <div class="step-col"><small>प्रथम चरण </small></div>
+                        <div class="step-col"><small>द्वितीय चरण</small></div>
+                        <div class="step-col"><small>तृतीय चरण</small></div>
                     </div>
                 </form>
-
-                <form action="" class="form-join" id="form2">
-                    <h3>Address</h3>
-                    <input type="email" name="email" id="email" placeholder="Email"><br>
-                    <input type="email" name="alt-email" id="alt-email" placeholder="Alternative Email"><br>
-                    <input type="number" id="mob" name="mob" placeholder="Mobile No."><br>
-                    <input type="number" name="alt-mob" id="alt-mob" placeholder="Alternative Contact No."><br>
-
-                    <div class="btn-box">
-                        <button type="button" id="back1">Back</button>
-                        <button type="button" id="next2">Next</button>
-                    </div>
-                </form>
-
-                <form action="" class="form-join" id="form3">
-                    <h3>Alternative</h3>
-
-
-                    <div class="btn-box">
-                        <button type="button" id="back2">Back</button>
-                        <button type="Submit">Submit</button>
-                    </div>
-                </form>
-
-                <div class="step-row">
-                    <div id="progress"></div>
-                    <div class="step-col"><small>Step 1</small></div>
-                    <div class="step-col"><small>Step 2</small></div>
-                    <div class="step-col"><small>Step 3</small></div>
-                </div>
             </div>
         </div>
     </div>
@@ -246,7 +246,7 @@
     <div class="members_box">
         <div class="members">
             <div class="members-heading">
-                <h2>Team Members</h2>
+                <h2>सदस्य</h2>
             </div>
             <!-- Slider main container -->
             <div class="swiper-container mySwiper">
@@ -302,8 +302,8 @@
                 </div>
                 <div class="swiper-pagination" style="color: white;"></div>
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev" style="color: white;"></div>
-                <div class="swiper-button-next" style="color: white;"></div>
+                <div class="swiper-button-prev" style="color: black;"></div>
+                <div class="swiper-button-next" style="color: black;"></div>
             </div>
         </div>
     </div>
