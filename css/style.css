@@ -1,31 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
 }
 
-html{
+html {
     font-size: 62.5%;
     position: relative;
 }
-body{
+
+body {
     position: relative;
     height: 100%;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin:0 0 3rem 0;
+    margin: 0 0 3rem 0;
     background-color: rgb(255, 255, 255);
     border: 0rem solid rgba(147, 147, 147, 0.538);
     user-select: none;
     outline: none;
 }
-header::after{
-    content:"";
+
+header::after {
+    content: "";
     width: 100%;
     height: 10rem;
     position: absolute;
@@ -39,7 +41,8 @@ header::after{
     border-radius: 5rem;
     z-index: 1;
 }
-.icon a img{
+
+.icon a img {
     position: relative;
     top: -.5rem;
     height: 100%;
@@ -54,16 +57,17 @@ header::after{
     cursor: default;
     z-index: 1;
 }
-.desktopMenu a{
+
+.desktopMenu a {
     font-size: 1.7rem;
-    margin:0 2rem;
+    margin: 0 2rem;
     text-transform: capitalize;
     color: black;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.desktopMenu .join_us{
+.desktopMenu .join_us {
     color: white;
     background-color: rgb(255, 123, 0);
     padding: .5rem;
@@ -72,7 +76,8 @@ header::after{
     border-radius: .4rem;
 
 }
-.desktopMenu .back{
+
+.desktopMenu .back {
     color: white;
     background-color: rgb(51, 51, 51);
     padding: .5rem;
@@ -82,31 +87,34 @@ header::after{
 }
 
 
-.desktopMenu a:hover{
+.desktopMenu a:hover {
     color: #e08217;
 }
-.desktopMenu .join_us:hover{
+
+.desktopMenu .join_us:hover {
     color: white;
     background-color: orange;
-    border: .2rem solid orange; 
+    border: .2rem solid orange;
 }
+
 .desktopMenu .back:hover {
     color: white;
     background-color: rgb(29, 29, 29);
     border: .2rem solid rgb(26, 26, 26);
 }
 
-@media only screen and (max-width: 678px){
+@media only screen and (max-width: 678px) {
     .desktopMenu {
-        display:none;
+        display: none;
     }
 }
+
 /* menu closed */
 
 /* mobile menu start */
 .menu {
     width: 20rem;
-    background-color:white;
+    background-color: white;
     height: 100vh;
     position: fixed;
     right: -25rem;
@@ -138,7 +146,8 @@ header::after{
     margin: 1rem;
     cursor: pointer;
 }
-.close i{
+
+.close i {
     font-size: 2rem;
 }
 
@@ -161,7 +170,7 @@ header::after{
 }
 
 .menu .menuList li a {
-    color: black;   
+    color: black;
     text-decoration: none;
 }
 
@@ -179,6 +188,7 @@ header::after{
         display: none;
     }
 }
+
 /* mobile menu closed */
 
 /*contact form start*/
@@ -242,7 +252,7 @@ textarea {
     border-radius: 2rem;
     background-color: #fefefe;
     position: relative;
-    margin:0 auto 0 auto;
+    margin: 0 auto 0 auto;
     /* 5% from the top, 15% from the bottom and centered */
     border: .1rem solid #888;
     width: 80%;
@@ -347,21 +357,25 @@ textarea {
 
 /*contact form end*/
 
-.prev, .next{
+.prev,
+.next {
     font-size: 3rem;
     color: rgb(0, 0, 0, 10);
 }
-.heading{
+
+.heading {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 3rem 0 3rem 0;
-    color: #631800;
+    color: #631900c0;
 }
+
 .heading h1 {
     width: 90%;
+    font-weight: 550;
 }
 
 /*cards*/
@@ -391,7 +405,7 @@ textarea {
 }
 
 .grid .box:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .content {
@@ -417,7 +431,7 @@ textarea {
 }
 
 .content>p {
-    padding:0 20px;
+    padding: 0 20px;
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -443,7 +457,7 @@ textarea {
 
 /*footer start*/
 .fa {
-    padding:2rem;
+    padding: 2rem;
     font-size: 2rem;
     width: fit-content;
     height: fit-content;
@@ -452,10 +466,12 @@ textarea {
     margin: 1rem .5rem;
     border-radius: 50%;
 }
+
 .fa:hover:not(.bars .fa) {
     opacity: 0.7;
-    color:white;
+    color: white;
 }
+
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -465,10 +481,12 @@ textarea {
     background: #55ACEE;
     color: white;
 }
+
 .fa-youtube {
     background: #bb0000;
     color: white;
 }
+
 /*footer end*/
 @media only screen and (max-width:575.5px) {
     .flex {
@@ -488,7 +506,7 @@ textarea {
     }
 }
 
-.blocker{
+.blocker {
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -500,14 +518,15 @@ textarea {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.members_box{
+.members_box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.members{
-    width: 90%;
+
+.members {
+    width: 100%;
     background-color: slategray;
     padding: 2rem;
 }
@@ -523,77 +542,92 @@ textarea {
     display: block;
     width: 100%;
 }
-.swiper-container .swiper-pagination{
-   position: relative;
-   top: 0rem;
-}
-.members-heading{
-    text-align: center;
-    margin: 2rem 0 3rem 0;
+
+.swiper-container .swiper-pagination {
+    position: relative;
+    top: 0rem;
     color: white;
 }
-.members_card{
+
+.members-heading {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.members-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.members_card {
     background: grey;
 }
-.members_card .img{
+
+.members_card .img {
     height: 15rem;
 }
-.members_card .img img{
+
+.members_card .img img {
     width: 100%;
 }
-.member-content{
+
+.member-content {
     background: white;
 }
 
-.members_card .member-content h2{
+.members_card .member-content h2 {
     font-weight: normal;
     text-align: center;
     margin: 1rem;
     color: brown;
 }
-.member-content p{
+
+.member-content p {
     color: rgb(0, 0, 0);
     padding: 2rem;
     padding-bottom: 3rem;
 }
-.members_card .member-content button{
+
+.members_card .member-content button {
     width: fit-content;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
-    padding:.1rem .5rem;
-    margin: 1.5rem;
+    padding: .5rem .8rem;
+    margin: 1rem;
     border: none;
     outline: none;
     background-color: slategray;
     color: white;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.contact-form .container-form{
+
+.contact-form .container-form {
     display: flex;
     flex-direction: column;
     width: 600px;
     max-width: 95vw;
 }
 
-.contact-details{
+.contact-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.contact-details h2{
+.contact-details h2 {
     text-align: center;
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
-.contact-details .contactHeaderImg{
+.contact-details .contactHeaderImg {
     width: 100%;
     height: 25rem;
     display: flex;
@@ -601,61 +635,168 @@ textarea {
     justify-content: center;
 }
 
-.contact-details .contactHeaderImg img{
+.contact-details .contactHeaderImg img {
     width: 70%;
     height: 100%;
 }
 
-.contact-details .office-details{
+.contact-details .office-details {
     margin: 2rem 0;
 }
-.contact-details .office-details>p{
-    text-align: center; 
+
+.contact-details .office-details>p {
+    text-align: center;
     color: #601300;
     font-size: 3rem;
 }
-.contact-details .office-details ul{
+
+.contact-details .office-details ul {
     list-style: none;
 }
-.contact-details .office-details ul li{
+
+.contact-details .office-details ul li {
     display: flex;
     align-items: center;
-    margin: 2rem  0;
+    margin: 2rem 0;
 }
-.contact-details .office-details ul li i{
+
+.contact-details .office-details ul li i {
     font-size: 2rem;
-    margin:0 1rem;
+    margin: 0 1rem;
 }
-.contact-details .office-details ul li h3{
+
+.contact-details .office-details ul li h3 {
     font-size: 1.5rem;
 }
-.contact-details .office-details ul li p, .contact-details .office-details ul li p a{
+
+.contact-details .office-details ul li p,
+.contact-details .office-details ul li p a {
     font-size: 1.5rem;
-    margin:0 1rem ;
+    margin: 0 1rem;
     text-decoration: none;
     color: #631800;
 }
 
-
-footer{
-    width: 100%;
-    height: 200px;
-    margin-top:5rem;
-    padding: 2rem;
-    background-color: grey; 
-    position: relative;
-}
-
-footer .social-media{
-    display:  flex;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-footer .social-media a{
-    width: 2rem;
-    height: 2rem;
+.quotesContainer {
     display: flex;
     align-items: center;
+    padding: 5rem 4rem;
+}
+
+.quotesBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-gap: 2rem 1rem;
+    width: 100%;
+    place-content: center;
+    place-items: center;
+}
+
+.quotes {
+    max-width: fit-content;
+    min-width: 5rem;
+    min-height: 5rem;
+    max-height: fit-content; 
+    box-shadow: .1rem .1rem .5rem grey;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #222222;
+    height: 100%;
+    padding: 5rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+::selection {
+    color: white;
+    background-color: orange;
+}
+
+footer .heading-white {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .heading-white h4 {
+    text-align: start;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-decoration: underline;
+}
+
+footer .heading-white p {
+    text-align: start;
+    font-size: 1.6rem;
+    color: rgb(210, 210, 210);
+    margin: 1rem 0;
+
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+footer .social-media ul li a {
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+footer .heading-white a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .heading-white a:hover {
+    color: orange;
+}
+
+footer .heading-white hr {
+    color: white;
+}
+
+.footer .copyright {
+    color: white;
+    text-align: center;
+    background-color: #562351;
+    padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 848px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .heading-white {
+        margin: 0 1rem;
+        text-align: center;
+        display: block;
+    }
+
+    footer .heading-white p {
+        width: 20rem;
+        max-width: 90%;
+        padding: 0 .4rem;
+    }
+
+    footer .heading-white h4 {
+        width: 100%;
+
+    }
 }
